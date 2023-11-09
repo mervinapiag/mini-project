@@ -29,10 +29,8 @@ This will execute the test suite using the Mocha test framework.
 
 Update the `.env` file with the following configurations:
 
-```bash
-DATABASE_URL=<your db connection>
-JWT_KEY=<your jwt key>
-ALLOWED_ORIGINS=<allowed origins separated by comma>
+``` bash
+cp .env.example .env
 ```
 
 ### `.env.test`
