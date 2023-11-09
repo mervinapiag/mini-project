@@ -93,14 +93,6 @@ npm start
 ```
 This will start the application and make it accessible at the designated port.
 
-## Testing
-
-To run the tests for the Mini-project, use the following command:
-```bash
-npm run test
-```
-This will execute the test suite using the Mocha test framework.
-
 ## Development
 ### `.env`
 
@@ -110,36 +102,16 @@ Update the `.env` file with the following configurations:
 cp .env.example .env
 ```
 
-### `.env.test`
-
-For running tests, update the `.env.test` file with the following configurations:
-
-```bash
-NODE_ENV=test
-TEST_USERNAME=<test username>
-TEST_PASSWORD=<test username>
-TEST_URL=<api base url>
-DATABASE_TEST_URL=<test db connection>
-```
-
-### Creating new model
+### Migrate the tables
 
 To generate new model:
 ```bash
-npx sequelize-cli models:generate --name <name> --attributes <list of attributes>
+npx sequelize-cli db:migrate
 ```
+### Seeder for tables
 
-### Creating migrations
-
-To generate new migration:
 ```bash
-npx sequelize-cli migration:generate --name <name>
-npx sequelize-cli db:migrate # to run migration
-```
-
-To view all Sequelize commands, run:
-```bash
-npx sequelize-cli
+npx sequelize-cli db:seed:all
 ```
 
 ### Folder Structuring
