@@ -1,4 +1,81 @@
 # Mini project
+- POSTMAN JSON COLLECTION
+```json
+{
+	"info": {
+		"_postman_id": "a380dfe7-417a-4de2-a4b5-d555466be5c2",
+		"name": "Mini Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30623717"
+	},
+	"item": [
+		{
+			"name": "Find Treasure",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitude\": \"14.552036595352455\",\r\n    \"longitude\": \"121.01696118771324\",\r\n    \"distance\": \"1\",\r\n    \"prize_value\": \"20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/treasures/find-treasures",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"treasures",
+						"find-treasures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Treasure with prize value",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitude\": \"14.552036595352455\",\r\n    \"longitude\": \"121.01696118771324\",\r\n    \"distance\": \"1\",\r\n    \"prize_value\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/treasures/find-treasures",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"treasures",
+						"find-treasures"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+```
 
 ## Installation
 
