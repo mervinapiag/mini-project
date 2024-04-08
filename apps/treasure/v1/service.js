@@ -17,8 +17,8 @@ const MoneyValue = models.MoneyValue;
 
 exports.findTreasure = async (data) => {
     const { latitude, longitude, distance,prize_value  } = data;
-// Validate required fields
-if (!latitude || !longitude || !distance) {
+  // Validate required fields
+  if (!latitude || !longitude || !distance) {
     throw new Error('Latitude, longitude, and distance are required.');
   }
 

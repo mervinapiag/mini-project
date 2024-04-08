@@ -14,15 +14,9 @@ module.exports = {
       },
       amt: {
         type: Sequelize.INTEGER
-      },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
       }
+    }, {
+      timestamps: true
     });
   },
   async down(queryInterface, Sequelize) {
